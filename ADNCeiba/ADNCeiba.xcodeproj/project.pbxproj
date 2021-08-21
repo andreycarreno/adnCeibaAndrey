@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA60ADA26CF4503006B0394 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AD926CF4503006B0394 /* Tests_iOS.swift */; };
+		2AA60ADC26CF4503006B0394 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60ADB26CF4503006B0394 /* Tests_iOSLaunchTests.swift */; };
+		2AA60AE626CF4503006B0394 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AE526CF4503006B0394 /* Tests_macOS.swift */; };
+		2AA60AE826CF4503006B0394 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AE726CF4503006B0394 /* Tests_macOSLaunchTests.swift */; };
+		2AA60AE926CF4504006B0394 /* ADNCeiba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC026CF4501006B0394 /* ADNCeiba.xcdatamodeld */; };
+		2AA60AEA26CF4504006B0394 /* ADNCeiba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC026CF4501006B0394 /* ADNCeiba.xcdatamodeld */; };
+		2AA60AEB26CF4504006B0394 /* ADNCeibaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC226CF4501006B0394 /* ADNCeibaApp.swift */; };
+		2AA60AEC26CF4504006B0394 /* ADNCeibaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC226CF4501006B0394 /* ADNCeibaApp.swift */; };
+		2AA60AED26CF4504006B0394 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC326CF4501006B0394 /* ContentView.swift */; };
+		2AA60AEE26CF4504006B0394 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC326CF4501006B0394 /* ContentView.swift */; };
+		2AA60AEF26CF4504006B0394 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC426CF4501006B0394 /* Persistence.swift */; };
+		2AA60AF026CF4504006B0394 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA60AC426CF4501006B0394 /* Persistence.swift */; };
+		2AA60AF126CF4504006B0394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA60AC526CF4503006B0394 /* Assets.xcassets */; };
+		2AA60AF226CF4504006B0394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AA60AC526CF4503006B0394 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AA60AD626CF4503006B0394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA60ABB26CF4501006B0394 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA60AC926CF4503006B0394;
+			remoteInfo = "ADNCeiba (iOS)";
+		};
+		2AA60AE226CF4503006B0394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AA60ABB26CF4501006B0394 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AA60ACF26CF4503006B0394;
+			remoteInfo = "ADNCeiba (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AA60AC126CF4501006B0394 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		2AA60AC226CF4501006B0394 /* ADNCeibaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADNCeibaApp.swift; sourceTree = "<group>"; };
+		2AA60AC326CF4501006B0394 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AA60AC426CF4501006B0394 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2AA60AC526CF4503006B0394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AA60ACA26CF4503006B0394 /* ADNCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA60AD026CF4503006B0394 /* ADNCeiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNCeiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA60AD526CF4503006B0394 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA60AD926CF4503006B0394 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		2AA60ADB26CF4503006B0394 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		2AA60AE126CF4503006B0394 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA60AE526CF4503006B0394 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		2AA60AE726CF4503006B0394 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AA60AC726CF4503006B0394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ACD26CF4503006B0394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60AD226CF4503006B0394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ADE26CF4503006B0394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AA60ABA26CF4501006B0394 = {
+			isa = PBXGroup;
+			children = (
+				2AA60ABF26CF4501006B0394 /* Shared */,
+				2AA60AD826CF4503006B0394 /* Tests iOS */,
+				2AA60AE426CF4503006B0394 /* Tests macOS */,
+				2AA60ACB26CF4503006B0394 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AA60ABF26CF4501006B0394 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2AA60AC226CF4501006B0394 /* ADNCeibaApp.swift */,
+				2AA60AC326CF4501006B0394 /* ContentView.swift */,
+				2AA60AC426CF4501006B0394 /* Persistence.swift */,
+				2AA60AC526CF4503006B0394 /* Assets.xcassets */,
+				2AA60AC026CF4501006B0394 /* ADNCeiba.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2AA60ACB26CF4503006B0394 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA60ACA26CF4503006B0394 /* ADNCeiba.app */,
+				2AA60AD026CF4503006B0394 /* ADNCeiba.app */,
+				2AA60AD526CF4503006B0394 /* Tests iOS.xctest */,
+				2AA60AE126CF4503006B0394 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AA60AD826CF4503006B0394 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2AA60AD926CF4503006B0394 /* Tests_iOS.swift */,
+				2AA60ADB26CF4503006B0394 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		2AA60AE426CF4503006B0394 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				2AA60AE526CF4503006B0394 /* Tests_macOS.swift */,
+				2AA60AE726CF4503006B0394 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AA60AC926CF4503006B0394 /* ADNCeiba (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA60AF526CF4504006B0394 /* Build configuration list for PBXNativeTarget "ADNCeiba (iOS)" */;
+			buildPhases = (
+				2AA60AC626CF4503006B0394 /* Sources */,
+				2AA60AC726CF4503006B0394 /* Frameworks */,
+				2AA60AC826CF4503006B0394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ADNCeiba (iOS)";
+			productName = "ADNCeiba (iOS)";
+			productReference = 2AA60ACA26CF4503006B0394 /* ADNCeiba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AA60ACF26CF4503006B0394 /* ADNCeiba (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA60AF826CF4504006B0394 /* Build configuration list for PBXNativeTarget "ADNCeiba (macOS)" */;
+			buildPhases = (
+				2AA60ACC26CF4503006B0394 /* Sources */,
+				2AA60ACD26CF4503006B0394 /* Frameworks */,
+				2AA60ACE26CF4503006B0394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ADNCeiba (macOS)";
+			productName = "ADNCeiba (macOS)";
+			productReference = 2AA60AD026CF4503006B0394 /* ADNCeiba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AA60AD426CF4503006B0394 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA60AFB26CF4504006B0394 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				2AA60AD126CF4503006B0394 /* Sources */,
+				2AA60AD226CF4503006B0394 /* Frameworks */,
+				2AA60AD326CF4503006B0394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA60AD726CF4503006B0394 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 2AA60AD526CF4503006B0394 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2AA60AE026CF4503006B0394 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AA60AFE26CF4504006B0394 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				2AA60ADD26CF4503006B0394 /* Sources */,
+				2AA60ADE26CF4503006B0394 /* Frameworks */,
+				2AA60ADF26CF4503006B0394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AA60AE326CF4503006B0394 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 2AA60AE126CF4503006B0394 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AA60ABB26CF4501006B0394 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					2AA60AC926CF4503006B0394 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2AA60ACF26CF4503006B0394 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					2AA60AD426CF4503006B0394 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2AA60AC926CF4503006B0394;
+					};
+					2AA60AE026CF4503006B0394 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 2AA60ACF26CF4503006B0394;
+					};
+				};
+			};
+			buildConfigurationList = 2AA60ABE26CF4501006B0394 /* Build configuration list for PBXProject "ADNCeiba" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AA60ABA26CF4501006B0394;
+			productRefGroup = 2AA60ACB26CF4503006B0394 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AA60AC926CF4503006B0394 /* ADNCeiba (iOS) */,
+				2AA60ACF26CF4503006B0394 /* ADNCeiba (macOS) */,
+				2AA60AD426CF4503006B0394 /* Tests iOS */,
+				2AA60AE026CF4503006B0394 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AA60AC826CF4503006B0394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60AF126CF4504006B0394 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ACE26CF4503006B0394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60AF226CF4504006B0394 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60AD326CF4503006B0394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ADF26CF4503006B0394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AA60AC626CF4503006B0394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60AEB26CF4504006B0394 /* ADNCeibaApp.swift in Sources */,
+				2AA60AEF26CF4504006B0394 /* Persistence.swift in Sources */,
+				2AA60AE926CF4504006B0394 /* ADNCeiba.xcdatamodeld in Sources */,
+				2AA60AED26CF4504006B0394 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ACC26CF4503006B0394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60AEC26CF4504006B0394 /* ADNCeibaApp.swift in Sources */,
+				2AA60AF026CF4504006B0394 /* Persistence.swift in Sources */,
+				2AA60AEA26CF4504006B0394 /* ADNCeiba.xcdatamodeld in Sources */,
+				2AA60AEE26CF4504006B0394 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60AD126CF4503006B0394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60ADC26CF4503006B0394 /* Tests_iOSLaunchTests.swift in Sources */,
+				2AA60ADA26CF4503006B0394 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA60ADD26CF4503006B0394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA60AE826CF4503006B0394 /* Tests_macOSLaunchTests.swift in Sources */,
+				2AA60AE626CF4503006B0394 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AA60AD726CF4503006B0394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA60AC926CF4503006B0394 /* ADNCeiba (iOS) */;
+			targetProxy = 2AA60AD626CF4503006B0394 /* PBXContainerItemProxy */;
+		};
+		2AA60AE326CF4503006B0394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AA60ACF26CF4503006B0394 /* ADNCeiba (macOS) */;
+			targetProxy = 2AA60AE226CF4503006B0394 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AA60AF326CF4504006B0394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AA60AF426CF4504006B0394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2AA60AF626CF4504006B0394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.ADNCeiba;
+				PRODUCT_NAME = ADNCeiba;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AA60AF726CF4504006B0394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.ADNCeiba;
+				PRODUCT_NAME = ADNCeiba;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AA60AF926CF4504006B0394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.ADNCeiba;
+				PRODUCT_NAME = ADNCeiba;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2AA60AFA26CF4504006B0394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ceiba.ADNCeiba;
+				PRODUCT_NAME = ADNCeiba;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2AA60AFC26CF4504006B0394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ceiba.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ADNCeiba (iOS)";
+			};
+			name = Debug;
+		};
+		2AA60AFD26CF4504006B0394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ceiba.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ADNCeiba (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AA60AFF26CF4504006B0394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ceiba.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ADNCeiba (macOS)";
+			};
+			name = Debug;
+		};
+		2AA60B0026CF4504006B0394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WR3R42S9ZT;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ceiba.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "ADNCeiba (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AA60ABE26CF4501006B0394 /* Build configuration list for PBXProject "ADNCeiba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA60AF326CF4504006B0394 /* Debug */,
+				2AA60AF426CF4504006B0394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA60AF526CF4504006B0394 /* Build configuration list for PBXNativeTarget "ADNCeiba (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA60AF626CF4504006B0394 /* Debug */,
+				2AA60AF726CF4504006B0394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA60AF826CF4504006B0394 /* Build configuration list for PBXNativeTarget "ADNCeiba (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA60AF926CF4504006B0394 /* Debug */,
+				2AA60AFA26CF4504006B0394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA60AFB26CF4504006B0394 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA60AFC26CF4504006B0394 /* Debug */,
+				2AA60AFD26CF4504006B0394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AA60AFE26CF4504006B0394 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AA60AFF26CF4504006B0394 /* Debug */,
+				2AA60B0026CF4504006B0394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2AA60AC026CF4501006B0394 /* ADNCeiba.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2AA60AC126CF4501006B0394 /* Shared.xcdatamodel */,
+			);
+			currentVersion = 2AA60AC126CF4501006B0394 /* Shared.xcdatamodel */;
+			path = ADNCeiba.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2AA60ABB26CF4501006B0394 /* Project object */;
+}

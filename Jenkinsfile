@@ -12,14 +12,6 @@ pipeline {
 
   //Aquí comienzan los “items” del Pipeline
   stages{
-    
-    stage('Build') {
-        
-      //como compilar con comandos en ios
-      steps {
-        sh './gradlew --b ./build.gradle build -x test'
-      }
-    }  
 
     stage('Compile') {
         steps {
@@ -35,7 +27,7 @@ pipeline {
         }
     }
 
-    tage('Static Code Analysis') {
+    stage('Static Code Analysis') {
       tools {
         jdk 'JDK11_Mac'
       }

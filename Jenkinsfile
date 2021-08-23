@@ -17,14 +17,14 @@ pipeline {
         steps {
             echo "------------>Compile<------------"
             
-            sh 'xcodebuild -scheme [SCHEME] clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
+            sh 'xcodebuild -scheme CeibaAdn-Parking clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
         }
     }
 
     stage('Unit Tests') {
         steps{
             echo "------------>Unit Tests<------------"
-            sh 'xcodebuild test -scheme [SCHEME] -configuration "Debug"  -destination "platform=iOS Simulator,name=[MODEL],OS=[VERSION]" -enableCodeCoverage YES | xcpretty -r junit --output build/reports/junit.xml'
+            sh 'xcodebuild test -scheme CeibaAdn-Parking -configuration "Debug"  -destination "platform=iOS Simulator,name=iPhone 8,OS=iOS 14.5" -enableCodeCoverage YES | xcpretty -r junit --output build/reports/junit.xml'
         }
     }
 

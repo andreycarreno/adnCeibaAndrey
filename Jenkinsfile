@@ -16,7 +16,8 @@ pipeline {
     stage('Compile') {
         steps {
             echo "------------>Compile<------------"
-            sh 'cd /adnCeibaAndrey/ADNCeiba/'
+            sh 'ls'
+            sh 'cd /ADNCeiba/'
             sh 'xcodebuild -scheme [SCHEME] clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
         }
     }

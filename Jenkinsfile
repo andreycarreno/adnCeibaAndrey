@@ -1,73 +1,54 @@
 pipeline {
   //Donde se va a ejecutar el Pipeline
   agent {
-    label 'Slave_Induccion'
+    label 'Slave_Mac'
   }
 
   //Opciones específicas de Pipeline dentro del Pipeline
   options {
     	buildDiscarder(logRotator(numToKeepStr: '3'))
- 	disableConcurrentBuilds()
+ 	    disableConcurrentBuilds()
   }
-
-  //Una sección que define las herramientas “preinstaladas” en Jenkins
-  tools {
-    jdk 'JDK8_Centos' //Verisión preinstalada en la Configuración del Master
-  }
-/*	Versiones disponibles
-      JDK8_Mac
-      JDK6_Centos
-      JDK7_Centos
-      JDK8_Centos
-      JDK10_Centos
-      JDK11_Centos
-      JDK13_Centos
-      JDK14_Centos
-*/
 
   //Aquí comienzan los “items” del Pipeline
   stages{
-    stage('Checkout') {
-      steps{
-        checkout([
-            $class: 'GitSCM', 
-            branches: [[name: '*/master']], 
-            doGenerateSubmoduleConfigurations: false, 
-            extensions: [], 
-            gitTool: 'Default', 
-            submoduleCfg: [], 
-            userRemoteConfigs: [[
-            credentialsId: 'GitHub_yucaci24', 
-            url:'https://github.com/yucaci24/PC_MultiProjectGradle'
-            ]]
-        ])
-
-      }
-    }
     
-    stage('Compile & Unit Tests') {
-      steps{
-        echo "------------>Compile & Unit Tests<------------"
-        sh 'chmod +x gradlew'
-        sh './gradlew --b ./build.gradle test'
-
-      }
-    }
-
-    stage('Static Code Analysis') {
-      steps{
-        echo '------------>Análisis de código estático<------------'
-        withSonarQubeEnv('Sonar') {
-            sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
-        }
-      }
-    }
-
     stage('Build') {
+        
+      //como compilar con comandos en ios
       steps {
         sh './gradlew --b ./build.gradle build -x test'
       }
     }  
+
+    stage('Compile') {
+        steps {
+            echo "------------>Compile<------------"
+            sh 'xcodebuild -scheme [SCHEME] clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO"'
+        }
+    }
+
+    stage('Unit Tests') {
+        steps{
+            echo "------------>Unit Tests<------------"
+            sh 'xcodebuild test -scheme [SCHEME] -configuration "Debug"  -destination "platform=iOS Simulator,name=[MODEL],OS=[VERSION]" -enableCodeCoverage YES | xcpretty -r junit --output build/reports/junit.xml'
+        }
+    }
+
+    tage('Static Code Analysis') {
+      tools {
+        jdk 'JDK11_Mac'
+      }
+      steps{
+        echo '------------>Análisis de código estático<------------'
+        withSonarQubeEnv('Sonar') {
+            sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
+        }
+      }
+    }
+
+
+    
   }
 
   post {

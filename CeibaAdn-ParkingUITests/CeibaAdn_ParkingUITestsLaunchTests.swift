@@ -1,13 +1,13 @@
 //
-//  Tests_iOSLaunchTests.swift
-//  Tests iOS
+//  CeibaAdn_ParkingUITestsLaunchTests.swift
+//  CeibaAdn-ParkingUITests
 //
-//  Created by Jeison Andrey Carreño Sánchez - Ceiba Software on 19/08/21.
+//  Created by Jeison Andrey Carreño Sánchez - Ceiba Software on 23/08/21.
 //
 
 import XCTest
 
-class Tests_iOSLaunchTests: XCTestCase {
+class CeibaAdn_ParkingUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

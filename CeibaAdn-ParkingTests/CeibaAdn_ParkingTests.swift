@@ -24,9 +24,6 @@ class CeibaAdn_ParkingTests: XCTestCase {
         XCTAssert(true)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        XCTAssert(true)
-    }
+    
 
 }

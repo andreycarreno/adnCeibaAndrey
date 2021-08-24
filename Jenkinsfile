@@ -25,7 +25,7 @@ pipeline {
         steps{
             echo "------------>Unit Tests<------------"
             //sh 'xcodebuild test -scheme CeibaAdn-Parking -configuration "Debug"  -destination "platform=iOS Simulator,name=iPhone 8 Plus,OS=14.5" -enableCodeCoverage YES | xcpretty -r junit --output build/reports/junit.xml'
-            sh "xcodebuild -project CeibaAdn-Parking.xcodeproj -scheme CeibaAdn-Parking -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.5' test"
+            sh "xcodebuild -project CeibaAdn-Parking.xcodeproj -scheme CeibaAdn-Parking -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.5' test junit --output build/reports/junit.xml"
         }
     }
 
@@ -34,7 +34,7 @@ pipeline {
         echo '------------>Análisis de código estático<------------'
         sh 'swiftlint lint > swiftlint.txt || true'
         withSonarQubeEnv('Sonar') {
-            sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
+            sh "${tool name: 'SonarScanner-Mac', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dsonar.swift.swiftlint.report=swiftlint.txt -Dproject.settings=sonar-project.properties"
         }
       }
     }

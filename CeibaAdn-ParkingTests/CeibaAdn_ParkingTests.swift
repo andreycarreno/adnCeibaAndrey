@@ -21,12 +21,12 @@ class CeibaAdn_ParkingTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+        XCTAssert(true)
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        
+        XCTAssert(true)
     }
 
 }

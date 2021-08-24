@@ -24,7 +24,12 @@ pipeline {
     stage('Unit Tests') {
         steps{
             echo "------------>Unit Tests<------------"
-            sh 'xcodebuild -scheme CeibaAdn-Parking "." -destination "platform=iOS Simulator,name=iPhone 12" build test'
+            //sh 'xcodebuild test -scheme CeibaAdn-Parking -configuration "Debug"  -destination "platform=iOS Simulator,name=iPhone 8,OS=14.5" -enableCodeCoverage YES | xcpretty -r junit --output build/reports/junit.xml'
+            sh "xcodebuild \ 
+            -scheme CeibaAdn-Parking \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.5' \
+            test"
         }
     }
 

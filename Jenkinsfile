@@ -24,7 +24,7 @@ pipeline {
     stage('Unit Tests') {
         steps{
             echo "------------>Unit Tests<------------"
-            sh 'xcodebuild -scheme CeibaAdn-Parking -workspace "." -destination "platform=iOS Simulator,name=iPhone 12" build test'
+            sh 'xcodebuild -scheme CeibaAdn-Parking "." -destination "platform=iOS Simulator,name=iPhone 12" build test'
         }
     }
 

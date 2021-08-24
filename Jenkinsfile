@@ -30,14 +30,11 @@ pipeline {
     }
 
     stage('Static Code Analysis') {
-      tools {
-        jdk 'JDK11_Mac'
-      }
       steps{
         echo '------------>Análisis de código estático<------------'
         sh 'swiftlint lint > swiftlint.txt || true'
         withSonarQubeEnv('Sonar') {
-            sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner"
+            sh "${tool name: 'SonarScanner-Mac', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dsonar.swift.swiftlint.report=swiftlint.txt -Dproject.settings=sonar-project.properties"
         }
       }
     }
